@@ -7,5 +7,9 @@
         public string Description { get; set; }
         public string ImageUrl { get; set; }
         public decimal Price { get; set; }
+        public int? CategoryId { get; set; }
+        
+        // Bir Product üzerinden onun Category'sine ulaşır (product.Category.CategoryName)
+        public Category Category { get; set; }
     }
 }
